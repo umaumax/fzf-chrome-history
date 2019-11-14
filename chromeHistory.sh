@@ -72,7 +72,7 @@ function show_chrome_history() {
     )
 
     # terminalに出力したいときのため
-    if [ `echo $select_history | tr -d " "` = "export" ]; then 
+    if [[ `echo $select_history | tr -d " "` == "export" ]]; then
         echo "$chrome_history" \
         | grep "$filter" \
         | awk -F ',' '!a[$2]++' \
