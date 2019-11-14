@@ -1,5 +1,8 @@
 #!/bin/sh
 
+shopt -s expand_aliases
+alias grep='ggrep'
+
 #
 # Chromeの閲覧履歴をfzfで絞り込んで選択したURLをChromeで開くスクリプト
 #
